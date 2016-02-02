@@ -1,0 +1,1 @@
+include ':app', ':wx_red_packets_assistant'

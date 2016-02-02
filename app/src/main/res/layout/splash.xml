@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AD1A22" >
+
+    <RelativeLayout
+        android:id="@+id/bottomRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="24dp">
+
+        <ImageView
+            android:id="@+id/bottomIcon"
+            android:layout_width="140dp"
+            android:layout_height="85dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/fac" />
+
+        <TextView
+            android:id="@+id/bottonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bottomIcon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:text="2016一大波红包正在逼近···"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/adsRl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomRl"
+        android:padding="18dip">
+    </RelativeLayout>
+
+</RelativeLayout>

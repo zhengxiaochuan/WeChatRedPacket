@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AD1A22"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/aa"
+        android:layout_width="match_parent"
+        android:layout_height="44dip"
+        android:background="#AD1A22" >
+
+        <!-- android:background="#ff495a" -->
+
+        <TextView
+            android:id="@+id/reg_back_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/map_bg_selector"
+            android:clickable="true"
+            android:drawableLeft="@drawable/icon_left_normalwh"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingLeft="10dip"
+            android:text="点广告得积分赚钱"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="13dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#AD1A22"
+            android:id="@+id/lin"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="同一个广告点多只计入有效点击次数哟!,您若不喜欢这个，不管它就好"
+                android:textColor="#F7ED91"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

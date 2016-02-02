@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AD1A22"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/aa"
+            android:layout_width="match_parent"
+            android:layout_height="44dip"
+            android:background="#AD1A22" >
+
+            <!-- android:background="#ff495a" -->
+
+            <TextView
+                android:id="@+id/reg_back_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:background="@drawable/map_bg_selector"
+                android:clickable="true"
+                android:drawableLeft="@drawable/icon_left_normalwh"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingLeft="10dip"
+                android:text="我的设置"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.4dip"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/white"/>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/aa" >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="13dip" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#AD1A22"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dip"
+                            android:drawableLeft="@drawable/gx"
+                            android:text=" 连续抢红包"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dip"
+                            android:paddingLeft="3dip"
+                            android:text=" 抢完红包后返回微信主界面,蓄势待抢!"
+                            android:textColor="#F7ED91"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="18dip"
+                            android:drawableLeft="@drawable/gx"
+                            android:text=" 锁屏下抢红包"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dip"
+                            android:paddingLeft="3dip"
+                            android:text=" 锁屏睡眠状态下默默抢红包,永远不嫌钱多!"
+                            android:textColor="#F7ED91"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_set_ring_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="18dip"
+                            android:drawableLeft="@drawable/gx"
+                            android:text=" 铃声提醒"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_set_ring"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dip"
+                            android:paddingLeft="3dip"
+                            android:text=" 设置属于我的红包铃声"
+                            android:textColor="#F7ED91"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="18dip"
+                            android:drawableLeft="@drawable/gx"
+                            android:text=" 延迟抢红包"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/delay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dip"
+                            android:gravity="center"
+                            android:hint=" 默认0.1秒"
+                            android:inputType="numberDecimal"
+                            android:maxLength="5"
+                            android:paddingLeft="3dip"
+                            android:textColor="#F7ED91"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=" 太快被微信发现罚3天不能抢红包,太慢容易错过几个亿,建议使用默认！(单位:秒)"
+                            android:textColor="#F7ED91"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="18dip"
+                            android:drawableLeft="@drawable/gx"
+                            android:text=" 自动回复"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/reply"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dip"
+                            android:hint="抢到红包,不感谢下土豪呀"
+                            android:text="谢谢老板#恭喜发财#谢谢土豪"
+                            android:paddingLeft="3dip"
+                            android:textColor="#F7ED91"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dip"
+                            android:paddingLeft="3dip"
+                            android:text="用#分开,比如 谢谢老板#恭喜发财#谢谢土豪,可随机回复其中三句,更灵活,不需要随机回复随便填即可!"
+                            android:textColor="#F7ED91"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dip"
+                            android:paddingLeft="3dip"
+                            android:text="  以上功能其他抢红包软件可都是需要您赏赐6块6毛6,8块8毛8,9块9毛9才享有的特权,我帮您默认实现,大过年的不谈钱只谈感(guang)情(gao)!"
+                            android:textColor="#F7ED91"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/set"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="6dip"
+                    android:gravity="center"
+                    android:text="@string/app_copy_right"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13.0sp" />
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

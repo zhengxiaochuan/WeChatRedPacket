@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">红包助手</string>
+    <string name="action_settings">设置</string>
+
+    <string name="app_copy_right">Copyright©2016 大家所有</string>
+    <string name="accessibility_description">启动拼抢红包助手抢红包助手服务即可自动抢红包！</string>
+    <string name="open_setting_tips">找到抢红包助手开启服务即可</string>
+    <string name="waiting_for_order_to_rob_red_packet">请主人速速下令抢红包！！</string>
+    <string name="waiting_for_red_packet">正在等待红包出现</string>
+</resources>
